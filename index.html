@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- title-->
+      <title>Nouman's Portfolio</title>
+    <!----- favicon----->
+    <link rel="icon" href="images\Nlogofavicon.png" type="image/gif" sizes="16x16">
+    <!-- Style file of CSS -->
+    <link rel="stylesheet" href="Style files\css\style.css" type="text/css">
+    <link rel="stylesheet" href="Style files\css\navstyle.css" type="text/css">
+    <link rel="stylesheet" href="Style files\css\topbtnstyle.css">
+    <!-- Java Quary -->  
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <!-- Bootstrap JS Files-->
+    <script src="Style files\js\bootstrap.bundle.min.js"></script>
+    <script src="Style files\js\bootstrap.min.js"></script>
+    <!-- Bootstrap CSS Files-->
+    <link rel="stylesheet" href="Style files\css\bootstrap-reboot.min.css" type="text/css">
+    <link rel="stylesheet" href="Style files\css\bootstrap-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="Style files\css\bootstrap.min.css" type="text/css"> 
+    <!-- for goodle fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+
+<body >
+  <div class="stk"> <!------ For Navigation Bar Sticky----------------->
+
+<h5 id="About"></h5>   <!------ for motion when i am click to move on About portion----------------->
+
+  <!------------- Naigation Bar--------screen and (max-width:  771px-------------->
+<nav class="icon-bar1">
+  <div id="myNav" class="overlay">
+  <span style="cursor:pointer; color: white;" class="closebtn" onclick="closeNav()">&times;</span>
+  <div class="overlay-content">
+    <a href="#About">About</a>
+    <a href="#Education">Education</a>
+    <a href="#Skills">Skills</a>
+    <a href="#Contact">Contact</a>
+  </div>
+</div>
+
+<div class="iconbar1">
+<img style="float: left; padding-left:10px; cursor: pointer;" src="images\Nlogo.png" title="Nouman Logo" alt="Nouman Logo">
+<span style="cursor:pointer; float: right; color: white; padding-right: 10px;" class="op" onclick="openNav()">&#9776;</span>
+
+</div>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "50%";
+}
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</nav>
+
+<!------------- Naigation Bar-----screen and (min-width:  771px----------------->
+<nav class="icon-bar2">
+  <img style="float: left; width: 40px; height: 40px; margin-left: 50px; cursor:pointer" src="images\Nlogo.png" title="Nouman Logo" alt="Nouman Logo">
+  <a href="#Contact"><i><p>Contact us</p></i></a>
+  <a href="#Skills"><i><p>Skills</p></i></a>
+  <a href="#Education"><i><p>Education</p></i></a>
+  <a href="#About"><i><p>About</p></i></a>
+</nav>
+<!------------- About Portion----------------->
+<section class="container">
+ <div class="box" style="background-image: url(71.jpg);">
+       <div class="text-block">
+        <h1>MUHAMMAD NOUMAN</h1>
+        <h5>Web Designer</h5>
+        <p>I am from Rohri.I am a Student of  CSE at Quaid-e-Awam University Of Engineering, Science & Technology Nawabshah.I myself am humble, kind, caring and courageous. I am most respected, loved and responsible human being. Though, it is quite hard to write about yourself yet I have tried myself best to express all about myself.I am a good student, who actively participates in all activities, be it exams or extra curricular activities. The extracurricular activities like sports, quiz competitions, essays and speech competitions etc. I myself am essay competition winner on various times.</p>
+        <img src="images\n1.png">
+
+</div>
+</div>
+ </section>
+
+<h5 id="Education"></h5>   <!------ for motion when i am click to move on Education portion----------------->
+
+<!------------------------------Code for Top Button----------------------------------->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<!----------------------------------------------------------------->
+
+<h5 id="Education"></h5>   <!------ for motion when i am click to move on that portion----------------->
+ 
+ <!------------- Education portion----------------->
+ <section class="container">
+        <span class="badge title"><h2>Education</h2></span>
+          <div class="art">
+             <h5>APRAIL 2015</h5>
+              <h3><b style="color: red;">MATRICULATION, </b>PRINCE PUBLIC HIGH SCHOOL BHIRIA CITY.</h3>
+              <h4>RESULT: A1 GRADE</h4>
+              <br>
+              <h5>APRAIL 2017</h5>
+              <h3><b style="color: red;">INTERMEDIATE, </b>GOVT: DEGREE BOYS COLLEGE SUKKUR.</h3>
+              <h4>RESULT: A GRADE</h4>
+              <br>
+              <h5>CONTINUED 3RD YEAR </h5>
+              <h3><b style="color: red;">3RD YEAR BE (COMPUTER SYSTEM ENGINEERING), </b>QUAID-E-AWAM UNIVERSITY OF ENGINEERING SECIENCE & TECHNOLOGY NAWABSHAH</h3>
+          </div>
+ </section>
+<h5 id="Skills"></h5>   <!------ for motion when i am click to move on that portion----------------->
+
+<!------------- Skill portion---------------->
+ <section class="container">
+  <span class="badge title"><h2>Skills</h2></span>
+  <div class="art">
+  <div class="row">
+
+    <div class="col-s">
+      <h4>Html & CSS</h4>
+      <div class="progres">
+        <div class="progressbar progress-bar-danger" role="progressbar" aria-valuenow="70"
+            aria-valuemin="0" aria-valuemax="100" style="width:80%">
+             80%
+        </div>
+      </div>
+    </div>
+
+    <div class="col-s">
+      <h4>Javascript</h4>
+      <div class="progres">
+        <div class="progressbar progress-bar-danger" role="progressbar" aria-valuenow="70"
+            aria-valuemin="0" aria-valuemax="100" style="width:60%">
+             60%
+        </div>
+      </div>
+    </div>
+
+    <div class="col-s">
+      <h4>C/C++</h4>
+      <div class="progres">
+        <div class="progressbar progress-bar-danger" role="progressbar" aria-valuenow="70"
+            aria-valuemin="0" aria-valuemax="100" style="width:70%">
+             70%
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<div class="row">
+
+    <div class="col-s">
+      <h4>C#</h4>
+      <div class="progres">
+        <div class="progressbar progress-bar-danger" role="progressbar" aria-valuenow="70"
+            aria-valuemin="0" aria-valuemax="100" style="width:40%">
+             40%
+        </div>
+      </div>
+    </div>
+
+    <div class="col-s">
+      <h4>Office 365</h4>
+      <div class="progres">
+        <div class="progressbar progress-bar-danger" role="progressbar" aria-valuenow="70"
+            aria-valuemin="0" aria-valuemax="100" style="width:80%">
+             80%
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<h5 id="Contact"></h5>   <!------ for motion when i am click to move on Contact portion----------------->
+
+<!------------- Contact us Portion----------------->
+ <footer>
+        <div class="container">
+            <h2 style="color: white;">Contact us</h2><br>
+            
+				<div class="row">
+            <div class="col-s1">
+                 <img src="images/instagram.png" alt="Email Logo"><a href="https://www.instagram.com/noumanarain53/?hl=en" title="Nouman Instagram Profile">Instagram</a>
+              </div>
+   					 <div class="col-s1">
+  						    <img src="images/facebook.png" alt="Facebook Logo" ><a href="https://web.facebook.com/nouman.arain.524" title="Nouman Facebook Profile">Facebook</a>
+  					  </div> 
+
+   					  <div class="col-s1">
+    						<img src="images/whatsapp.png" alt="whatsapp Logo" title="whatsapp Number"><a href="#Contact" title="whatsapp Number">+923133493416</a>
+   					  </div>
+
+   					  <div class="col-s1">
+   					  		<img src="images/gmail.png" alt="Gmail logo" title="Gmail"><a href="https://mail.google.com/ " title="Gmail user name">Noumanarain0</a>
+   					  </div>
+
+    				  <div class="col-s1">
+     						 <img src="images/linkedin.png" alt="Email Logo"><a href="https://www.linkedin.com/in/muhammad-nouman-arain-b448b81a3/" title="Nouman Linkedin Profile">Linkedin</a>
+    				  </div>
+    			</div>
+
+                   		 <hr color="white"> <!------ for Horizontal Line----------------->
+            
+            <h5 class="lin">©2020|All Rights Reserved By Muhammad Nouman|Developed & Maintained by Nouman</h5>
+        </div>
+        
+    </footer>
+  </div>
+</body>
+</html>
