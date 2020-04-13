@@ -61,7 +61,7 @@ function closeNav() {
 </nav>
 
 <!------------- Naigation Bar-----screen and (min-width:  771px----------------->
-<nav class="icon-bar2">
+<nav id="myid" class="icon-bar2">
   <img style="float: left; width: 40px; height: 40px; margin-left: 50px; cursor:pointer" src="images\Nlogo.png" title="Nouman Logo" alt="Nouman Logo">
   <a href="#Contact"><i><p>Contact us</p></i></a>
   <a href="#Skills"><i><p>Skills</p></i></a>
@@ -81,32 +81,18 @@ function closeNav() {
 </div>
  </section>
 
+<script>
+
+
+</script>
+
+
 <h5 id="Education"></h5>   <!------ for motion when i am click to move on Education portion----------------->
 
 <!------------------------------Code for Top Button----------------------------------->
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-<script>
-//Get the button
-var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
 <!----------------------------------------------------------------->
 
 <h5 id="Education"></h5>   <!------ for motion when i am click to move on that portion----------------->
@@ -227,6 +213,80 @@ function topFunction() {
         
     </footer>
   </div>
-  <script data-ad-client="ca-pub-3464621688394598" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+//Get the button
+var mynav = document.getElementById("myid");
+var mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {
+								scrollFunction();// When the user scrolls down 20px from the top of the document, show the button
+								scrollFunct()};// When the user scrolls down from the top of the document hover change automaticaly
+
+// Function for Hover
+function scrollFunct() {
+	// When the user scrolls down from the top of the document, hover is on About
+  if (document.body.scrollTop >0 && document.body.scrollTop < 480 || document.documentElement.scrollTop >0 && document.documentElement.scrollTop < 480 ) {
+  	var abou = mynav.lastElementChild;
+  	var abo = abou.classList;
+  	abo.add("act");
+
+  	var Educ = mynav.lastElementChild.previousElementSibling;
+  	var Edu = Educ.classList;
+  	Edu.remove("act");
+
+  	var skil = mynav.firstElementChild.nextElementSibling.nextElementSibling;
+  	var ski = skil.classList;
+  	ski.remove("act");
+  }
+
+// When the user scrolls down from the top of the document, hover is on Education
+  else if (document.body.scrollTop >480 && document.body.scrollTop < 730 || document.documentElement.scrollTop >480 && document.documentElement.scrollTop < 730 ) {
+    var Educ = mynav.lastElementChild.previousElementSibling;
+  	var Edu = Educ.classList;
+  	Edu.add("act");
+
+  	var abou = mynav.lastElementChild;
+  	var abo = abou.classList;
+  	abo.remove("act");
+
+  	var skil = mynav.firstElementChild.nextElementSibling.nextElementSibling;
+  	var ski = skil.classList;
+  	ski.remove("act");
+  }
+
+ // When the user scrolls down from the top of the document, hover is on Skill
+ else if (document.body.scrollTop > 730|| document.documentElement.scrollTop > 730 ) {
+  	var abou = mynav.lastElementChild;
+  	var abo = abou.classList;
+  	abo.remove("act");
+
+  	var Educ = mynav.lastElementChild.previousElementSibling;
+  	var Edu = Educ.classList;
+  	Edu.remove("act");
+
+  	var skil = mynav.firstElementChild.nextElementSibling.nextElementSibling;
+  	var ski = skil.classList;
+  	ski.add("act");
+  }
+
+}
+
+// Function for Button
+function scrollFunction() {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
 </body>
 </html>
